@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>林玉龍｜個人履歷</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<style>
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:sans-serif; background:#121212; color:#eee; display:flex; justify-content:center; }
+.container { width:80%; max-width:1200px; }
+
+header { text-align:center; padding:1rem 0; }
+header h1 { font-size:2rem; margin-bottom:0.2rem; color:#fff; }
+header h2 { font-size:1.2rem; color:#aaa; margin-bottom:0.5rem; }
+nav { margin-bottom:0.5rem; }
+nav a { margin:0 0.5rem; text-decoration:none; color:#eee; font-weight:bold; font-size:0.9rem; transition:0.3s; }
+nav a:hover { color:#6a5acd; }
+
+.swiper { width:100%; height:250px; margin:0.5rem auto; border-radius:1rem; overflow:hidden; }
+.swiper-slide { background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center; color:white; text-shadow:0 2px 6px rgba(0,0,0,0.7); font-size:1.2rem; }
+
+section { padding:2rem 0; text-align:center; }
+section h2 { margin-bottom:1.5rem; color:#fff; }
+
+.card-container { display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; }
+.card { background:#1e1e1e; padding:1rem; border-radius:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.5); transition:0.3s; color:#eee; }
+.card:hover { transform:translateY(-5px); box-shadow:0 6px 12px rgba(0,0,0,0.7); }
+
+.skill-bar { background:#333; border-radius:0.5rem; overflow:hidden; margin:0.5rem 0; position:relative; height:1rem; }
+.skill-fill { height:100%; width:0; background:#6a5acd; transition:width 1s; text-align:right; color:white; line-height:1rem; padding-right:4px; font-size:0.7rem; font-weight:bold; }
+
+.portfolio-container { display:grid; grid-template-columns:repeat(2,1fr); gap:0.5rem; justify-items:center; }
+.portfolio-img { width:100%; border-radius:1rem; }
+
+@media(min-width:768px){
+  .swiper { height:400px; }
+  .portfolio-container { grid-template-columns:repeat(5,1fr); gap:1rem; }
+  /* 技能對稱排列 PC 版 3x2 */
+  #skills .card-container { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; justify-items:center; }
+}
+
+footer { text-align:center; padding:1.5rem 0; background:#1e1e1e; color:#aaa; margin-top:1rem; font-size:0.8rem; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<h1>林玉龍</h1>
+<h2>互動設計師 | LINE 貼圖創作者</h2>
+<nav>
+<a href="#about">關於我</a>
+<a href="#experience">經歷</a>
+<a href="#skills">技能</a>
+<a href="#portfolio">作品集</a>
+<a href="#contact">聯絡</a>
+</nav>
+</header>
+
+<!-- 輪播 -->
+<div class="swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide" style="background-image:url('https://i.postimg.cc/TYRPsPYg/generated-image-4k-01.jpg')">互動設計師 / 數位創意前端</div>
+<div class="swiper-slide" style="background-image:url('https://i.postimg.cc/MpLKXb0M/generated-image-4k-02.jpg')">結合創意與技術，打造互動作品</div>
+<div class="swiper-slide" style="background-image:url('https://i.postimg.cc/W3G29BB8/generated-image-4k-03.jpg')">LINE 貼圖創作者 (60套上架)</div>
+</div>
+</div>
+
+<!-- 關於我 -->
+<section id="about">
+<h2>關於我</h2>
+<p style="max-width:600px;margin:0 auto;">結合創意與技術，專注於互動設計與數位內容製作，持續學習新工具提升作品品質。</p>
+</section>
+
+<!-- 工作經歷 -->
+<section id="experience">
+<h2>工作經歷</h2>
+<div class="card-container">
+<div class="card" style="width:250px;">
+<h3>天使美術館</h3>
+<p>數位內容設計師 (2004~2006)</p>
+<p>網站管理、網頁設計、書籍排版、海報設計、多媒體設計。協助館內活動與展覽數位呈現，提升視覺與互動體驗。</p>
+</div>
+<div class="card" style="width:250px;">
+<h3>中華電信 藝術裝置標案</h3>
+<p>多媒體設計助理 (2004)</p>
+<p>協助藝術裝置的數位設計及互動呈現。</p>
+</div>
+</div>
+</section>
+
+<!-- 技能 -->
+<section id="skills">
+<h2>技能</h2>
+<div class="card-container">
+<div class="card" style="width:220px;">
+<h3>Photoshop (PS)</h3>
+<div class="skill-bar"><div class="skill-fill" data-level="80%">80%</div></div>
+</div>
+<div class="card" style="width:220px;">
+<h3>Illustrator (AI)</h3>
+<div class="skill-bar"><div class="skill-fill" data-level="80%">80%</div></div>
+</div>
+<div class="card" style="width:220px;">
+<h3>剪映</h3>
+<div class="skill-bar"><div class="skill-fill" data-level="80%">80%</div></div>
+</div>
+<div class="card" style="width:220px;">
+<h3>基本 JS / 動畫特效</h3>
+<div class="skill-bar"><div class="skill-fill" data-level="70%">70%</div></div>
+</div>
+<div class="card" style="width:220px;">
+<h3>LINE 貼圖設計</h3>
+<div class="skill-bar"><div class="skill-fill" data-level="90%">90%</div></div>
+</div>
+<div class="card" style="width:220px;">
+<h3>網頁排版 / 多媒體設計</h3>
+<div class="skill-bar"><div class="skill-fill" data-level="85%">85%</div></div>
+</div>
+</div>
+</section>
+
+<!-- 作品集 -->
+<section id="portfolio">
+<h2>LINE 貼圖作品集</h2>
+<div class="portfolio-container">
+<img class="portfolio-img" src="https://stickershop.line-scdn.net/stickershop/v1/product/29077785/LINEStorePC/main.png?v=1" alt="">
+<img class="portfolio-img" src="https://stickershop.line-scdn.net/stickershop/v1/product/26653079/LINEStorePC/main.png?v=1" alt="">
+<img class="portfolio-img" src="https://stickershop.line-scdn.net/stickershop/v1/product/26030738/LINEStorePC/main.png?v=1" alt="">
+<img class="portfolio-img" src="https://stickershop.line-scdn.net/stickershop/v1/product/26397765/LINEStorePC/main.png?v=1" alt="">
+<img class="portfolio-img" src="https://stickershop.line-scdn.net/stickershop/v1/product/31224858/LINEStorePC/main.png?v=1" alt="">
+<img class="portfolio-img" src="https://stickershop.line-scdn.net/stickershop/v1/product/25630540/LINEStorePC/main.png?v=1" alt="">
+<img class="portfolio-img" src="https://stickershop.line-scdn.net/stickershop/v1/product/25491265/LINEStorePC/main.png?v=1" alt="">
+<img class="portfolio-img" src="https://stickershop.line-scdn.net/stickershop/v1/product/25437260/LINEStorePC/main.png?v=1" alt="">
+<img class="portfolio-img" src="https://stickershop.line-scdn.net/stickershop/v1/product/25435522/LINEStorePC/main.png?v=1" alt="">
+<img class="portfolio-img" src="https://stickershop.line-scdn.net/stickershop/v1/product/25397828/LINEStorePC/main.png?v=1" alt="">
+</div>
+</section>
+
+<!-- 聯絡方式 -->
+<section id="contact">
+<h2>聯絡方式</h2>
+<p>Email: march1022@gmail.com</p>
+<p>電話: 0968810937</p>
+</section>
+
+<footer>
+&copy; 2025 林玉龍. 保留所有權利。
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const swiper = new Swiper('.swiper', {
+    loop:true,
+    autoplay:{ delay:3000, disableOnInteraction:false },
+    effect:'fade'
+  });
+  const fills = document.querySelectorAll('.skill-fill');
+  fills.forEach(fill => {
+    const level = fill.getAttribute('data-level');
+    setTimeout(() => { fill.style.width = level; }, 200);
+  });
+});
+</script>
+
+</body>
+</html>
